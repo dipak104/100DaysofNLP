@@ -7,7 +7,7 @@ from gensim.models import CoherenceModel
 import spacy
 from multiprocessing import Process, freeze_support
 import os
-
+import re
 def run():
     nlp = spacy.load('en_core_web_lg', disable=['parser','ner'])
     stopwords = list(nlp.Defaults.stop_words)
